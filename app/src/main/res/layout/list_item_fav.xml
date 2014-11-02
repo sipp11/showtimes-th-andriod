@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    /*
+    * Copyright (C) 2014 Zzyzx Co., Ltd. and Sippakorn Khaimook
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *      http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="8dp"
+    android:gravity="center"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    android:orientation="horizontal">
+
+    <!-- Color -->
+    <View
+        android:id="@+id/group_color"
+        android:layout_width="@dimen/item_horizontal_margin"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="0px"
+        android:layout_height="1px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerVertical"
+        android:dividerPadding="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+        <!-- Theater name -->
+        <TextView
+            android:id="@android:id/text1"
+            style="?android:textAppearanceMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="?android:listPreferredItemPaddingLeft" />
+
+        <!-- A button that, when pressed, will delete this list item row from its container. -->
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="blah"
+            android:src="@drawable/ic_action_cancel" />
+    </LinearLayout>
+</LinearLayout>
